@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/animalImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@color/purple_200"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeImage"
+            android:backgroundTint="@color/teal_200"
+            android:textSize="20sp"
+            android:text="Dog"/>
+
+        <Button
+            android:id="@+id/catBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeImage"
+            android:backgroundTint="@color/teal_200"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="16dp"
+            android:text="Cat"/>
+
+        <Button
+            android:id="@+id/giraffeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeImage"
+            android:backgroundTint="@color/teal_200"
+            android:textSize="20sp"
+            android:text="Giraffe"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/thisDodBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:backgroundTint="#FF3700B3"
+            android:textSize="20sp"
+            android:text="that dog"/>
+
+        <Button
+            android:id="@+id/thisCatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:backgroundTint="#FF3700B3"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20sp"
+            android:text="that cat"/>
+
+        <Button
+            android:id="@+id/thisGiraffeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="answer"
+            android:backgroundTint="#FF3700B3"
+            android:textSize="20sp"
+            android:text="that giraffe"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resultBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="open result"
+        android:backgroundTint="@color/teal_200"/>
+
+</LinearLayout>
